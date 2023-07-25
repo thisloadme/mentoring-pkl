@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Pertemuan 1</title>
+</head>
 <body>
     <?php
 
@@ -99,6 +102,5 @@
             <input type="submit" value="prediksi" name="do_prediksi">
         </form>
     </div>
-
 </body>
 </html>
