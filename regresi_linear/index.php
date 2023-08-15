@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pertemuan 1</title>
+    <title>Linear Regression</title>
 </head>
 <body>
     <?php
