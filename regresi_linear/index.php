@@ -9,6 +9,7 @@
     <h3>Soal : Buatlah program sederhana seperti dibawah ini menggunakan full php native!</h3>
     <hr>
     <?php
+    $baseUrl = $_SERVER['PHP_SELF'] ?? '';
 
     $isPrediksi = isset($_POST['do_prediksi']);
 
@@ -79,7 +80,7 @@
     <h1>Prediksi Penjualan Warung Paijo</h1>
 
     <div>
-        <form action="/regresi_linear/index.php" method="post">
+        <form action="<?= $baseUrl ?>" method="post">
             hari ke 1 : <input type="number" name="nominal[]" value="<?= $isPrediksi ? $trainingNominal[0] : null ?>">
             <br>
             hari ke 2 : <input type="number" name="nominal[]" value="<?= $isPrediksi ? $trainingNominal[1] : null ?>">

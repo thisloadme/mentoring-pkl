@@ -9,8 +9,8 @@
     <h3>Soal : Buatlah program sederhana seperti dibawah ini menggunakan full php native!</h3>
     <hr>
     <?php
+    $baseUrl = $_SERVER['PHP_SELF'] ?? '';
 
-    set_time_limit(0);
     $isPrediksi = isset($_POST['do_prediksi']);
 
     if ($isPrediksi) {
@@ -152,7 +152,7 @@
     <h1>Prediksi Scabies Pada Kucing</h1>
 
     <div>
-        <form action="/regresi_logistic/index.php" method="post">
+        <form action="<?= $baseUrl ?>" method="post">
             Kucing 1<br>
             Berat : <input type="number" name="berat[]" value="<?= $isPrediksi ? $trainingBerat[0] : null ?>">
             Tinggi : <input type="number" name="tinggi[]" value="<?= $isPrediksi ? $trainingTinggi[0] : null ?>">
