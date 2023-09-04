@@ -37,17 +37,17 @@
     <h1>List Penugasan</h1>
 
     <div class="container">
-        <div class="items" onclick="window.location.href = '/regresi_linear'">
+        <div class="items" onclick="window.location.href = window.location.href + 'regresi_linear'">
             <h2>Regresi Linear</h2>
             <p>Tingkat Kesulitan : Medium</p>
         </div>
 
-        <div class="items" onclick="window.location.href = '/regresi_logistic'">
+        <div class="items" onclick="window.location.href = window.location.href + 'regresi_logistic'">
             <h2>Regresi Logistic</h2>
             <p>Tingkat Kesulitan : Sulit</p>
         </div>
 
-        <div class="items" onclick="window.location.href = '/fungsi_aktivasi'">
+        <div class="items" onclick="window.location.href = window.location.href + 'fungsi_aktivasi'">
             <h2>Fungsi Aktivasi</h2>
             <p>Tingkat Kesulitan : Mudah</p>
         </div>
