@@ -9,6 +9,8 @@
     <h3>Soal : Ada 3 contoh fungsi aktivasi yang populer, buatlah contoh program seperti dibawah ini menggunakan php native!</h3>
     <hr>
     <?php
+    // print_r($_SERVER);
+    $baseUrl = $_SERVER['PHP_SELF'];
 
     $isPrediksi = isset($_POST['do_hitung']);
 
@@ -53,7 +55,7 @@
     <h1>Implementasi Fungsi Aktivasi</h1>
 
     <div>
-        <form action="/fungsi_aktivasi/index.php" method="post">
+        <form action="<?= $baseUrl ?>" method="post">
             <table style="width: 50%;">
                 <tr>
                     <td>
