@@ -6,6 +6,8 @@
 </head>
 
 <body>
+    <h3>Soal : Buatlah program sederhana seperti dibawah ini menggunakan full php native!</h3>
+    <hr>
     <?php
 
     set_time_limit(0);
@@ -150,7 +152,7 @@
     <h1>Prediksi Scabies Pada Kucing</h1>
 
     <div>
-        <form action="index.php" method="post">
+        <form action="/regresi_logistic/index.php" method="post">
             Kucing 1<br>
             Berat : <input type="number" name="berat[]" value="<?= $isPrediksi ? $trainingBerat[0] : null ?>">
             Tinggi : <input type="number" name="tinggi[]" value="<?= $isPrediksi ? $trainingTinggi[0] : null ?>">

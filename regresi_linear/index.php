@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Linear Regression</title>
 </head>
+
 <body>
+    <h3>Soal : Buatlah program sederhana seperti dibawah ini menggunakan full php native!</h3>
+    <hr>
     <?php
 
     $isPrediksi = isset($_POST['do_prediksi']);
@@ -32,7 +36,7 @@
 
                 $jumlahSampel = count($x);
 
-                for ($i=0; $i < $this->iter; $i++) { 
+                for ($i = 0; $i < $this->iter; $i++) {
                     // prediksi target
                     $prediksi = array_map(function ($item) {
                         return ($this->weight * $item) + $this->bias;
@@ -75,7 +79,7 @@
     <h1>Prediksi Penjualan Warung Paijo</h1>
 
     <div>
-        <form action="index.php" method="post">
+        <form action="/regresi_linear/index.php" method="post">
             hari ke 1 : <input type="number" name="nominal[]" value="<?= $isPrediksi ? $trainingNominal[0] : null ?>">
             <br>
             hari ke 2 : <input type="number" name="nominal[]" value="<?= $isPrediksi ? $trainingNominal[1] : null ?>">
@@ -103,4 +107,5 @@
         </form>
     </div>
 </body>
+
 </html>
