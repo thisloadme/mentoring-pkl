@@ -33,7 +33,7 @@
 
         class LogisticRegression
         {
-            public $iter = 10;
+            public $iter = 50;
             public $lr = 0.001;
             public $weight = [0, 0];
             public $bias = 0;
