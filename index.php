@@ -52,15 +52,10 @@
             <p>Tingkat Kesulitan : Mudah</p>
         </div>
 
-        <!-- <div class="items">
-            <h2>Regresi Linear</h2>
-            <p>Tingkat Kesulitan : Medium</p>
+        <div class="items" onclick="window.location.href = window.location.href + 'cosine_similarity'">
+            <h2>Cosine Similarity</h2>
+            <p>Tingkat Kesulitan : Sedang</p>
         </div>
-
-        <div class="items">
-            <h2>Regresi Linear</h2>
-            <p>Tingkat Kesulitan : Medium</p>
-        </div> -->
     </div>
 </body>
 
